@@ -1,0 +1,35 @@
+
+Important Note:- Please generate your json by following the instructions at "accessGoogleSheetSteps" file.
+Because of a Google security concern i have edited my json.
+
+
+=> Small steps the best way to access Google Sheets only once. and how to use it in testing automation.
+
+1- Search at url bar — "Cloud console"
+2- Create A Virtual Machine on Google Cloud Platform (GCP) by clicking this link
+3- Go to "Console" in the top right corner of the screen now.
+4- the first time a popup appears:- Check the box next to Test&Condition and click Open.
+5- Now click the "New Project" icon to start a new project.
+6- Fill in the details: 'APIAutomationGCP' is the project name, along with the organisation and location.
+7- After create project — Search the ‘API & Services’ at search box.
+8- It is now necessary to "Enable" the project's API. The 'Enable APIs and Services' button should be clicked.
+9- Enter "Google Sheet API" into the list of APIs to find it. I clicked it. then select the "Enable" button.
+Likewise, look for "google drive api" and turn it on.
+10- The service name, Type, Public API, Enable, Version, v4 or v1 and v4, and the Status.
+ We can see real-time data on how many requests have been received on the dashboard.
+11- Creadentails at left navigation:-
+   - Now create Credentials - Click on the ‘Create Credentials’ button at Top.
+   - Always select the ’Service account'
+    Click on ‘Create service account’. Fill point 1st the service account name.
+   - Click on button ‘Create and Continue’.
+   - Without fill point 2nd and 3rd click on ‘continue' and ‘done' button.
+
+12- Create Private Keys:
+”Downloads a file that contains the private key. Store the file securely because this key can't be recovered if lost."
+A JSON will download witch have keys. These keys help to automate google application (google spreedsheet).
+A popup will display:- ”Private key saved to your computer”
+
+13- Now at ‘Details’ button - A Email id generated.
+We will give the edit access to google sheet. By the help of this email id we will access the google sheet.
+Copy the generated emai id and paste on the created google sheet share field. And give the Editor access to
+this account (Pasted email account).
