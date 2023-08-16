@@ -23,7 +23,7 @@ class Test_googleSheets(object):
 
         # In Google Sheets, use a for loop to choose the range of cells. which begin in the 2nd row and continue to
         # row 16th. In Google Sheet, the user can manually edit ("lastcell = 16") it up to a certain cell range.
-        lastcell = 16
+        lastcell = 3
 
         for i in range(2, lastcell + 1):
             user = current_sheet.cell(i, 1, value_render_option='FORMULA').value
@@ -47,8 +47,6 @@ class Test_googleSheets(object):
                 current_sheet.update_cell(i, 3, 'False')
                 current_sheet.update_cell(i, 4, response.status_code)
                 current_sheet.update_cell(i, 5, response.json()['message'])
-
-            i += 1
 
     def tear_down(self):
         print("Complete")

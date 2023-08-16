@@ -1,6 +1,0 @@
-# created by virtualenv automatically
-.idea
-.DS_STORE
-.Test_scripts/.pytest_cache
-TestScriptsExecution/.pytest_cache
-venu
